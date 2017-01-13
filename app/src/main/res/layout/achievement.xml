@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@mipmap/background_timeline">
+
+    <LinearLayout
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/first"
+            android:layout_width="0dp"
+            android:layout_weight="1.06"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/base1"/>
+
+
+        <ImageView
+            android:id="@+id/second"
+            android:layout_width="0dp"
+            android:layout_weight="1.02"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/base2_selected" />
+
+        <ImageView
+            android:id="@+id/third"
+            android:layout_width="0dp"
+            android:layout_weight="1.02"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/base3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/walked"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:orientation="horizontal"
+        android:background="@mipmap/header"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="160dp"
+            android:textColor="#FFFFFF"
+            android:text=""
+            android:layout_weight="0.63"/>
+
+    </LinearLayout>
+
+
+
+<ListView
+    android:id="@+id/achievement_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:divider="#00000000"
+    ></ListView>
+
+
+
+</LinearLayout>

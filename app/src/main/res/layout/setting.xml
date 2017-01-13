@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_setting"
+    tools:context=".SampleActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/first"
+            android:layout_width="0dp"
+            android:layout_weight="1.02"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"
+            android:clickable="true"
+            android:src="@mipmap/base1"/>
+
+
+        <ImageView
+            android:id="@+id/second"
+            android:layout_width="0dp"
+            android:layout_weight="1.02"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/base2" />
+
+        <ImageView
+            android:id="@+id/third"
+            android:layout_width="0dp"
+            android:layout_weight="1.02"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/base3_selected" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ResetMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重置地图"
+        android:background="@android:color/transparent"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:layout_alignParentBottom="true"
+    android:layout_toStartOf="@+id/switch1"
+    android:layout_marginLeft="41dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true">
+    <ImageView
+        android:id="@+id/AboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/about"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/Exit"
+        android:layout_toLeftOf="@+id/Exit"
+        android:layout_toStartOf="@+id/Exit"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_gravity="left" />
+
+    <ImageView
+        android:id="@+id/Function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/instruction"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/Exit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageView
+        android:id="@+id/Exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/logout"
+        android:scaleType="fitXY"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/ResetMap"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.11"
+        android:layout_gravity="right" />
+</LinearLayout>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:layout_marginBottom="44dp"
+        android:layout_above="@+id/ResetMap"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+</RelativeLayout>
